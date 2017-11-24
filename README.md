@@ -23,7 +23,7 @@ $ssh-keygen -t rsa
 $ssh-keygen -t rsa
 Generating public/private rsa key pair.
 Enter file in which to save the key (/Users/(username)/.ssh/id_rsa):id_git_rsa
-Enter passphrase (empty for no passphrase):
+Enter passphrase (empty for no passphrase):none
 Enter same passphrase again:
 
 $cat id_git_rsa.pub

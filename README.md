@@ -14,6 +14,11 @@ echo $SHELL
 cat /etc/shells
 chsh -s /bin/zsh
 ````
+##fzf
+````
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+````
 
 ##github SSH
 ````

@@ -5,12 +5,15 @@ if &compatible
   set nocompatible               " Be iMproved
 endif
 
+syntax on
+colorscheme molokai
+set t_Co=256
+
 " Required:
 set runtimepath+=~/.vim/bundle/neobundle.vim/
 
 " Required:
 call neobundle#begin(expand('~/.vim/bundle/'))
-
 " Let NeoBundle manage NeoBundle
 " Required:
 NeoBundleFetch 'Shougo/neobundle.vim'
@@ -103,7 +106,7 @@ set virtualedit=onemore
 " インデントはスマートインデント
 set smartindent
 " ビープ音を可視化
-set visualbell
+"set visualbell
 " 括弧入力時の対応する括弧を表示
 set showmatch
 " ステータスラインを常に表示
@@ -118,7 +121,7 @@ nnoremap k gk
 
 " Tab系
 " 不可視文字を可視化(タブが「▸-」と表示される)
-set list listchars=tab:\▸\-
+"set list listchars=tab:\▸\-
 " Tab文字を半角スペースにする
 set expandtab
 " 行頭以外のTab文字の表示幅（スペースいくつ分）

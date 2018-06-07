@@ -4,7 +4,23 @@ curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.s
 
 sh ./install.sh
 vim hoge
-:NeoBundleInstalli
+:NeoBundleInstall
+````
+##vim color scheme
+````
+$ mkdir ~/.vim
+$ cd ~/.vim
+$ mkdir colors
+
+$ git clone https://github.com/tomasr/molokai
+
+$ mv molokai/colors/molokai.vim ~/.vim/colors/
+
+$ vim ~/.vimrc
+syntax on
+colorscheme molokai
+set t_Co=256
+
 ````
 
 ##zsh install

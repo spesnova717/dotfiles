@@ -66,3 +66,11 @@ git commit -m "try commit"
 git push
 URL:https://qiita.com/nt_tn/items/c5ea999a2638e03ee418
 ````
+
+##username password
+````
+$vim ~/.netrc
+machine github.com
+login username
+password xxxxxxx
+````

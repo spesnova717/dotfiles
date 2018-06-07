@@ -59,3 +59,10 @@ Enter passphrase for key '/xxxx/.ssh/id_rsa':
 Hi spesnova717! You've successfully authenticated, but GitHub does not provide shell access.
 ````
 
+##github sample command
+````
+git add .
+git commit -m "try commit"
+git push
+URL:https://qiita.com/nt_tn/items/c5ea999a2638e03ee418
+````

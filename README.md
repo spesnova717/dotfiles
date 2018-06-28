@@ -1,7 +1,24 @@
-##Reference URL
+##New tmux install
 ````
-tmux tar install
 https://qiita.com/trisland/items/29f81b14fc350287bfd1
+
+If centos6
+$ yum install libevent2-devel
+$ yum install ncurses-devel
+
+If centos7
+$ yum install libevent-devel
+$ yum install ncurses-devel
+
+common
+$ cd /usr/local/src
+$ wget https://github.com/tmux/tmux/releases/download/2.7/tmux-2.7.tar.gz
+$ tar -xvf tmux-2.7.tar.gz
+$ cd tmux-2.7
+
+$ ./configure && make
+$ make install
+
 ````
 
 ##vim install

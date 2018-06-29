@@ -41,6 +41,23 @@ $ tmux source ~/.tmux.conf
 
 Reference URL
 https://github.com/tmux-plugins/tpm
+
+##tmux session save
+prefix C-s : session save
+prefix C-r : session recover
+
+Put this at the bottom of .tmux.conf:
+set -g @tpm_plugins '              \
+    tmux-plugins/tpm                 \
+    tmux-plugins/tmux-resurrect      \
+    '
+
+set -g @resurrect-strategy-vim 'session'
+set -g @resurrect-processes 'irb pry "~rails server" "~rails console"'
+
+run-shell '~/.tmux/plugins/tpm/tpm'
+
+prefix + I : install
 ````
 
 

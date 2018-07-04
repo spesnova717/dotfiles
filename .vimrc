@@ -49,6 +49,7 @@ NeoBundleCheck
 filetype plugin indent on
 " どうせだから jellybeans カラースキーマを使ってみましょう
 set t_Co=256
+set t_ut=y
 syntax on
 " colorscheme jellybeans
 

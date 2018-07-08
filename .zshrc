@@ -3,7 +3,7 @@
 export LANG=ja_JP.UTF-8
 
 # 色を使用出来るようにする
-autoload colors
+autoload -Uz colors
 colors
 # emacs 風キーバインドにする
 bindkey -e
@@ -17,8 +17,18 @@ SAVEHIST=1000000
 # 1行表示
 # PROMPT="%~ %# "
 # 2行表示
-PROMPT="%{${fg[black]}$bg[cyan]%} [%n@%m]%{${reset_color}%} %{${fg[cyan]}%} <%D{%Y/%m/%d %H:%M}> %{${reset_color}%}% ~
+#"PROMPT="%{${fg[black]}$bg[cyan]%} [%n@%m]%{${reset_color}%} %{${fg[green]}%} <%D{%Y/%m/%d %H:%M}> %{${reset_color}%}% ~
+#%# "
+#PROMPT="%{${fg[magenta]}%} [%n@%m]%{${reset_color}%} %{${fg[green]}%} <%D{%Y/%m/%d %H:%M}> %{${reset_color}%}%~
+#%# "
+#PROMPT="%{^[[30;48;5;082m%}%{^[[38;5;001m%}[%n@%m]%{^[[0m%}"
+#PROMPT="%K{24}%~ : $%K"
+PROMPT="%F{255}[%F{009}%n%F{255}@%F{011}%m%F{255}] %F{087}<%D{%Y/%m/%d %H:%M}>%{${reset_color}%}%F{208}%~%{$reset_color%}
 %# "
+#
+#PROMPT="%{${fg[100]}$bg[cyan]%} [%n@%m]%{${reset_color}%} %{${fg[green]}%} <%D{%Y/%m/%d %H:%M}> %{${reset_color}%}% ~
+#%# "
+#PROMPT="%{^[[38;5;001m%}RED%{^[[0m%}"
 #PROMPT="%{$fg[green]%}%m%(!.#.$) %{$reset_color%}"
 #PROMPT=$&apos;%{\e[38;5;16;48;5;46m%}%m%(!.#.$)%{\e[m%} &apos;]}]}
 PROMPT2="%{$fg[green]%}%_> %{$reset_color%}"

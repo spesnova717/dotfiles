@@ -33,6 +33,9 @@ NeoBundle 'Shougo/vimproc', {
 NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'ekalinin/Dockerfile.vim'
 NeoBundle 'rcmdnk/vim-markdown'
+
+" 20200913 NERDTree
+NeoBundle 'scrooloose/nerdtree'
 " vim-markdown {{{
 let g:vim_markdown_folding_disabled = 1
 " " }}}
@@ -144,4 +147,7 @@ set wrapscan
 set hlsearch
 " ESC連打でハイライト解除
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
+
+"20200913 NERDTree
+map <C-e> :NERDTreeToggle<CR>
 

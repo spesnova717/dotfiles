@@ -33,6 +33,7 @@ path=(# システム用
       /usr/local/bin(N-/)
       /usr/bin(N-/)
       /usr/games(N-/))
+      #/usr/local/ffmpeg_build/bin
 
 # sudo時のパスの設定
 ## -x: export SUDO_PATHも一緒に行う。
@@ -222,3 +223,9 @@ done
 ## これを実行するシェルスクリプトが/etc/profile.d/vte.shに
 ## インストールされているので、あったら読み込む。
 [ -f /etc/profile.d/vte.sh ] && . /etc/profile.d/vte.sh
+#export PATH=$PATH:/usr/local/ffmpeg_build/bin
+export PATH=$PATH:/opt_ext/ffmpeg_build/bin
+export PATH=$PATH:/opt_ext/cmake/bin
+
+#export PATH=$PATH:/usr/local/cuda-10.2/bin
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-10.2/lib64

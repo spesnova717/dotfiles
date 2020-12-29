@@ -23,8 +23,12 @@ SAVEHIST=1000000
 #%# "
 #PROMPT="%{^[[30;48;5;082m%}%{^[[38;5;001m%}[%n@%m]%{^[[0m%}"
 #PROMPT="%K{24}%~ : $%K"
-PROMPT="%F{255}[%F{009}%n%F{255}@%F{011}%m%F{255}] %F{087}<%D{%Y/%m/%d %H:%M}>%{${reset_color}%}%F{208}%~%{$reset_color%}
+#PROMPT="%F{255}[%F{009}%n%F{255}@%F{011}%m%F{255}] %F{087}<%D{%Y/%m/%d %H:%M}>%{${reset_color}%}%F{208}%~%{$reset_color%}
+#%# "
+
+PROMPT="%F{255}[%F{cyan}%n%F{255}@%F{cyan}%m%F{255}] %F{cyan}<%D{%Y/%m/%d %H:%M:%S}>%{${reset_color}%}%F{cyan}%~%{$reset_color%}
 %# "
+
 #
 #PROMPT="%{${fg[100]}$bg[cyan]%} [%n@%m]%{${reset_color}%} %{${fg[green]}%} <%D{%Y/%m/%d %H:%M}> %{${reset_color}%}% ~
 #%# "
@@ -208,3 +212,26 @@ esac
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh ]
 # vim:set ft=zsh:
+
+MPIROOT=/usr/local/openmpi-4.0.2
+export PATH=$MPIROOT/bin:$PATH
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$MPIROOT/lib
+export MANPATH=$MANPATH:$MPIROOT/share/man
+
+#export PATH=$PATH:/opt_ext/cmake/bin
+
+#pyenv
+export PATH="/root/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+#export PYENV_ROOT="$HOME/.pyenv"
+#export PATH="$PYENV_ROOT/bin:$PATH"
+#eval "$(pyenv init -)"
+#eval "$(plenv init - zsh)"
+#export PATH="$PYENV_ROOT/versions/anaconda3-4.3.0/bin/:$PATH"
+
+# CUDA path
+#export CUDA_ROOT="/usr/local/cuda"
+#export PATH=$CUDA_ROOT/bin:$PATH
+#export LIBRARY_PATH=$CUDA_ROOT/lib:$CUDA_ROOT/lib64:$LIBRARY_PATH  
+#export LD_LIBRARY_PATH=$CUDA_ROOT/lib64/

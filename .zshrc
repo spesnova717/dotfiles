@@ -26,7 +26,7 @@ SAVEHIST=1000000
 #PROMPT="%F{255}[%F{009}%n%F{255}@%F{011}%m%F{255}] %F{087}<%D{%Y/%m/%d %H:%M}>%{${reset_color}%}%F{208}%~%{$reset_color%}
 #%# "
 
-PROMPT="%F{255}[%F{cyan}%n%F{255}@%F{cyan}%m%F{255}] %F{cyan}<%D{%Y/%m/%d %H:%M:%S}>%{${reset_color}%}%F{cyan}%~%{$reset_color%}
+PROMPT="%F{255}[%F{cyan}%n%F{255}@%F{cyan}%m%F{255}] %F{cyan}<%D{%Y/%m/%d %H:%M:%S}>%{${reset_color}%}%F{255}%~%{$reset_color%}
 %# "
 
 #

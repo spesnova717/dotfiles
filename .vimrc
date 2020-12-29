@@ -151,3 +151,6 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 "20200913 NERDTree
 map <C-e> :NERDTreeToggle<CR>
 
+let g:NERDTreeDirArrows = 1
+let g:NERDTreeDirArrowExpandable  = '->'
+let g:NERDTreeDirArrowCollapsible = '|-'

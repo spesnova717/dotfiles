@@ -28,8 +28,6 @@ export PATH=$NCURSES_INC:$PATH
 export LD_LIBRARY_PATH=${NCURSES_HOME}/${NCURSES_VERSION}/lib:$LD_LIBRARY_PATH
 export PKG_CONFIG_PATH=${NCURSES_HOME}/${NCURSES_VERSION}/lib/pkgconfig:$PKG_CONFIG_PATH
 
-<<COMMENT_OUT
-
 cd ${WORK_DIR}/download
 
 wget https://sourceforge.net/projects/zsh/files/zsh/${ZSH_VERSION}/zsh-${ZSH_VERSION}.tar.xz/download -O zsh-${ZSH_VERSION}.tar.xz
@@ -58,11 +56,9 @@ git clone https://github.com/tomasr/molokai
 
 mv molokai/colors/molokai.vim ~/.vim/colors/
 
-
 cd ${WORK_DIR}/download
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install --no-bash --no-fish --key-bindings --completion --update-rc
-COMMENT_OUT
 
 TMUX_VERSION=3.2
 
